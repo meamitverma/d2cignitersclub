@@ -6,9 +6,13 @@ import logo from "../assets/images/logo/ignitersclub_logo.jpg";
 const title = "D2C Igniters club";
 
 const Container = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100vw;
   background-color: ${(props) => props.bgcolor};
   height: 60px;
   color: white;
+  user-select: none;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -43,9 +47,12 @@ const Middle = styled.div`
 const Navitem = styled.div`
   margin-right: 15px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
-    filter: brightness(85%);
+    /* filter: brightness(80%); */
+    font-weight: bold;
+    color: #1975ca;
   }
 `;
 
@@ -81,7 +88,7 @@ function Navbar() {
   console.log(navItems[0].title);
 
   return (
-    <Container bgcolor="#191919">
+    <Container bgcolor="#040303">
       <Wrapper>
         <Left>
           <Logo src={logo} ></Logo>
