@@ -15,9 +15,9 @@ function App() {
       <Home/>
       <Events/>
       {/* <About/> */}
-      <Blogs/>
+      {/* <Blogs/>
       <Team/>
-      <Footer/>
+      <Footer/> */}
     </React.Fragment>
   );
 }

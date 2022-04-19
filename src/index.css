@@ -1,4 +1,5 @@
 *{
   margin: 0;
+  scroll-behavior: smooth;
   font-family: 'Urbanist', sans-serif;
 }

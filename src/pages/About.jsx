@@ -16,7 +16,7 @@ const Info = styled.p`
 
 function Navbar() {
   return (
-    <Container>
+    <Container id="about">
       <Title>About</Title>
       <Info>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde

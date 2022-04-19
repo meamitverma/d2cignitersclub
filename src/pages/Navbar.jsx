@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { navItems } from "../data";
 
 import logo from "../assets/images/logo/ignitersclub_logo.jpg";
 
@@ -44,7 +45,9 @@ const Middle = styled.div`
   flex: 3;
   display: flex;
 `;
-const Navitem = styled.div`
+const Navitem = styled.a`
+  text-decoration: none;
+  color: white;
   margin-right: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -57,34 +60,7 @@ const Navitem = styled.div`
 `;
 
 function Navbar() {
-  const navItems = [
-    {
-      id: 1,
-      title: "Home",
-      href: "#",
-    },
-    {
-      id: 2,
-      title: "About",
-      href: "#",
-    },
-    {
-      id: 3,
-      title: "Events",
-      href: "#",
-    },
-    {
-      id: 4,
-      title: "Blog",
-      href: "#",
-    },
-    {
-      id: 5,
-      title: "Team",
-      href: "#",
-    },
-  ];
-
+  
   console.log(navItems[0].title);
 
   return (
