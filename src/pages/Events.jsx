@@ -136,7 +136,7 @@ function Navbar() {
           return (
             <Slide bgcolor={event.bgcolor} key={event.id}>
               <Left>
-                  <Heading>{event.title}</Heading>
+                  
                 <Video
                   width="560"
                   height="315"
@@ -152,7 +152,7 @@ function Navbar() {
                 </div>
               </Center>
               <Right>
-                {event.title}
+              <Heading>{event.title}</Heading>
                 {event.desc}
                 {event.dateofevent}
                 {event.timeofevent}
