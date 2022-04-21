@@ -127,7 +127,7 @@ function Navbar() {
 
   return (
     <Container id="events">
-      <Arrow dir="left" onClick={handleArrowClick}>
+      <Arrow dir="left" onClick={() => handleArrowClick("left")}>
        
       </Arrow>
 
@@ -169,7 +169,7 @@ function Navbar() {
           );
         })}
       </Wrapper>
-      <Arrow dir="right" onClick={handleArrowClick}></Arrow>
+      <Arrow dir="right" onClick={() => handleArrowClick("right")}></Arrow>
     </Container>
   );
 }
