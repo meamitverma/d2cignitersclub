@@ -14,7 +14,7 @@ const Info = styled.p`
   font-size: medium;
 `;
 
-function Navbar() {
+function About() {
   return (
     <Container id="about">
       <Title>About</Title>
@@ -30,4 +30,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default About;

@@ -63,19 +63,6 @@ const Left = styled.div`
   flex-direction: column;
   margin-left: 55px;
 `;
-const Heading = styled.h1`
-  margin: 45px 0px;
-`;
-const Video = styled.iframe`
-  width: 30vw;
-  height: 36vh;
-  border: none;
-`;
-
-const Center = styled.div`
-  flex: 1;
-  margin-left: 55px;
-`;
 const Poster = styled.img`
   height: 80vh;
   object-fit: contain;
@@ -85,12 +72,19 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   /* align-items: center; */
   width: auto; 
   height: 80vh;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-right: 110px;
+`;
+const Video = styled.iframe`
+  width: 30vw;
+  height: 36vh;
+  border: none;
+`;
+const Heading = styled.h1`
+  margin: 45px 0px;
 `;
 const RegisterButton = styled.button`
   border: none;
@@ -98,18 +92,21 @@ const RegisterButton = styled.button`
   height: 35px;
   color: white;
   font-size:large;
-  background-color: #2194ff;
+  border: 1px solid #616161;
+  background-color: #191919;
+  box-shadow: 2px 2px 3px darkgray;
   width: 100%;
   margin: 22px 0px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   &:hover{
-    background-color: #2c88df;
+    /* border: 2px solid black; */
+    background-color: #2194ff;
   }
 `;
 
-function Navbar() {
+function Events() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleArrowClick = (direction) => {
@@ -136,22 +133,24 @@ function Navbar() {
           return (
             <Slide bgcolor={event.bgcolor} key={event.id}>
               <Left>
-                  
-                <Video
-                  width="560"
-                  height="315"
-                  src={event.ytlink}
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></Video>
+                  <div>
+                  <Poster src={event.img}></Poster>
+                </div>
               </Left>
-              <Center>
+              {/* <Center>
                 <div>
                   <Poster src={event.img}></Poster>
                 </div>
-              </Center>
+              </Center> */}
               <Right>
+                <Video
+                    width="560"
+                    height="315"
+                    src={event.ytlink}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></Video>
               <Heading>{event.title}</Heading>
                 {event.desc}
                 {event.dateofevent}
@@ -174,4 +173,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Events;

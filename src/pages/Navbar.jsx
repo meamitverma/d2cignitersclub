@@ -14,6 +14,7 @@ const Container = styled.div`
   height: 60px;
   color: white;
   user-select: none;
+  z-index: 10;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -27,8 +28,6 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-
-  
 `;
 const Logo = styled.img`
   border-radius: 50%;
@@ -38,7 +37,6 @@ const Title = styled.h1`
   margin-left: 10px;
   font-weight: bold;
   font-size: x-large;
-  
 `;
 
 const Middle = styled.div`
@@ -60,21 +58,22 @@ const Navitem = styled.a`
 `;
 
 function Navbar() {
-  
   console.log(navItems[0].title);
 
   return (
     <Container bgcolor="#040303">
       <Wrapper>
         <Left>
-          <Logo src={logo} ></Logo>
+          <Logo src={logo}></Logo>
           <Title>{title}</Title>
         </Left>
         <Middle>
           {navItems.map((item) => {
-            return <Navitem key={item.id} href={item.href}>
-              {item.title}
-            </Navitem>;
+            return (
+              <Navitem key={item.id} href={item.href}>
+                {item.title}
+              </Navitem>
+            );
           })}
         </Middle>
       </Wrapper>

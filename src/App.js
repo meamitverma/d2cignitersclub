@@ -14,10 +14,10 @@ function App() {
       <Navbar/> 
       <Home/>
       <Events/>
+      <Blogs/>
       {/* <About/> */}
-      {/* <Blogs/>
       <Team/>
-      <Footer/> */}
+      <Footer/>
     </React.Fragment>
   );
 }
