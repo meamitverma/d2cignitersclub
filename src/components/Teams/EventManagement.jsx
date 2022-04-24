@@ -39,7 +39,7 @@ function EventMangement() {
   return (
     <Teams>
       <Head>
-        <h1>Event Management Team</h1>
+        <h1 style={{userSelect:"none"}}>Event Management Team</h1>
         <LeadMember>
         {
             members.map((member) => {

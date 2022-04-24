@@ -39,7 +39,7 @@ function Content() {
   return (
     <Teams>
       <Head>
-        <h1>Content Team</h1>
+        <h1 style={{userSelect:"none"}}>Content Team</h1>
         <LeadMember>
         {
             members.map((member) => {

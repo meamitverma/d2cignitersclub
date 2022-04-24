@@ -39,7 +39,7 @@ function SocialMedia() {
   return (
     <Teams>
       <Head>
-        <h1>Social Media Team</h1>
+        <h1 style={{userSelect:"none"}}>Social Media Team</h1>
         <LeadMember>
         {
             members.map((member) => {

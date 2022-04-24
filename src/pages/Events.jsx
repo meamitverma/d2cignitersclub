@@ -61,6 +61,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 55px;
 `;
 const Poster = styled.img`
@@ -71,21 +72,38 @@ const Poster = styled.img`
 const Right = styled.div`
   flex: 1;
   display: flex;
+  row-gap: 10px;
   flex-direction: column;
+  justify-content: center;
   /* align-items: center; */
   width: auto; 
   height: 80vh;
   /* margin-left: 10px; */
   margin-right: 110px;
 `;
+const VideoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 const Video = styled.iframe`
   width: 30vw;
   height: 36vh;
   border: none;
 `;
-const Heading = styled.h1`
-  margin: 45px 0px;
+const Heading = styled.h1``;
+const EventDesc = styled.p``;
+const EventDate = styled.div``;
+const EventSchedule = styled.div`
+  display: flex;
+  flex-direction:column;
+  row-gap: 3px;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+
 `;
+const EventTime = styled.div``;
+const EventVenue = styled.div``;
 const RegisterButton = styled.button`
   border: none;
   border-radius: 60px;
@@ -143,26 +161,41 @@ function Events() {
                 </div>
               </Center> */}
               <Right>
-                <Video
-                    width="560"
-                    height="315"
-                    src={event.ytlink}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></Video>
-              <Heading>{event.title}</Heading>
-                {event.desc}
-                {event.dateofevent}
-                {event.timeofevent}
-                {event.venue}
-                {event.reglink}
+                <VideoContainer>
+                  <Video
+                      width="560"
+                      height="315"
+                      src={event.ytlink}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></Video>
+                </VideoContainer>
+                
+                <Heading>{event.title}</Heading>
+                <EventDesc>{event.desc}</EventDesc>
+                
+                <EventSchedule>
+                 
+                  <EventDate>
+                    <img src="https://img.icons8.com/pastel-glyph/344/calendar.png" height={12} />
+                    {event.dateofevent}
+                  </EventDate>
+                  <EventTime>
+                    <img src="https://img.icons8.com/pastel-glyph/344/clock--v1.png" height={15} />
+                    {event.timeofevent}
+                  </EventTime>
+                  <EventVenue>
+                    <img src="https://img.icons8.com/ios/344/marker--v1.png" height={15} />  
+                    {event.venue}
+                  </EventVenue>   
+                </EventSchedule>
 
-              <a href={event.reglink} target="_">
-                <RegisterButton onClick="parent.href">
-                  Register
-                </RegisterButton>
-              </a>
+                <a href={event.reglink} target="_">
+                  <RegisterButton onClick="parent.href">
+                    Register
+                  </RegisterButton>
+                </a>
               </Right>
             </Slide>
           );

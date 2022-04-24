@@ -95,14 +95,14 @@ const Link = styled.a`
 
 const CopyrightContainer = styled.div`
   margin-top: 7vw;
+  user-select: none;
   /* position: relative; */
 `;
 const Copyright = styled.div`
-  /* display: flex;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; */
-  text-align: center;
+  row-gap: 7px;
   font-size: small;
   color: #b6b6b6;
 `;
@@ -163,6 +163,8 @@ function Footer() {
       <CopyrightContainer>
           <Copyright>
             <p>&#169; 2022 D2C Igniter's VIT Bhopal. All Rights reserved.</p>
+            {/* <br></br> */}
+            <p style={{fontSize:"smaller"}}>Developed by <a href="https://www.linkedin.com/in/meamitverma/" target="_" style={{textDecoration:"none",color:"inherit",fontWeight:"450"}}>Amit Verma</a></p>
             {/* <p style={{position:"absolute",bottom:0,right:0,textAlign:"center",fontSize:"11px"}}>Developed by <br></br> Amit Kumar Verma</p> */}
           </Copyright>
       </CopyrightContainer>

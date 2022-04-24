@@ -79,6 +79,37 @@ export const navItems = [
       author:"Douglas Rushkoff",
       date_posted:"Apr 12",
       reading_time:"3 min",
+      category:"Computer",
+      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+    },
+    {
+      id:2,
+      title:"Program or be Programmed",
+      short_desc:"Ten years ago, I realized media literacy meant something different",
+      author:"Douglas Rushkoff",
+      date_posted:"Apr 12",
+      reading_time:"3 min",
+      category:"Computer",
+      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+    },
+    {
+      id:3,
+      title:"Program or be Programmed",
+      short_desc:"Ten years ago, I realized media literacy meant something different",
+      author:"Douglas Rushkoff",
+      date_posted:"Apr 12",
+      reading_time:"3 min",
+      category:"Computer",
+      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+    },
+    {
+      id:4,
+      title:"Program or be Programmed",
+      short_desc:"Ten years ago, I realized media literacy meant something different",
+      author:"Douglas Rushkoff",
+      date_posted:"Apr 12",
+      reading_time:"3 min",
+      category:"Computer",
       link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
     }
   ];
@@ -263,7 +294,7 @@ export const navItems = [
     {
       id:'TWM',
       name:"Arunima Singh",
-      position:"Member",
+      position:"Web Member",
       profile:"https://media-exp1.licdn.com/dms/image/C5603AQGGODVn7D06AQ/profile-displayphoto-shrink_400_400/0/1642752782266?e=1656547200&v=beta&t=vH_4I24zRJWaeLx2yXSSY-XqHU6sotjcOZuXZQUnFFA",
       instagram:"https://www.instagram.com/alittleambivert/",
       linkedin:"https://www.linkedin.com/in/-arunima-singh/",
@@ -272,7 +303,7 @@ export const navItems = [
     {
       id:'TWM',
       name:"Amit Kumar Verma",
-      position:"Member, Developer",
+      position:" Web Member",
       profile:"https://media-exp1.licdn.com/dms/image/C4D03AQEFvQsfIngnuw/profile-displayphoto-shrink_400_400/0/1650527782080?e=1656547200&v=beta&t=cpuCgbsu1amRd5v5CkgfHrtKQZE3Tj2xnNrqKGsdqlM",
       linkedin:"https://www.linkedin.com/in/meamitverma/",
       instagram:"https://www.instagram.com/meamitverma/",
@@ -281,14 +312,14 @@ export const navItems = [
     {
       id:'TWM',
       name:"Nishi Jain",
-      position:"Member",
+      position:"Web Member",
       profile:"https://media-exp1.licdn.com/dms/image/C5603AQHPQDT-0FF6kQ/profile-displayphoto-shrink_400_400/0/1631094697524?e=1656547200&v=beta&t=KeAXzX2XvS1q4mSA8RKjcOE_N0hoGw1B_A5QD0EIp7U",
       linkedin:"https://www.linkedin.com/in/nishi-jain-b37636209/"
     },
     {
       id:'TWM',
       name:"Vidushi Pandey",
-      position:"Member",
+      position:"Web Member",
       profile:"https://media-exp1.licdn.com/dms/image/C4D03AQE-H3ENHTzSlQ/profile-displayphoto-shrink_400_400/0/1640620458755?e=1656547200&v=beta&t=892bXu64_YY52hNWTE3fPN9-BRPU84YQHYeBiWfbA-E",
       linkedin:"https://www.linkedin.com/in/vidushi-pandey-964a51221/"
     },
@@ -297,12 +328,12 @@ export const navItems = [
     {
       id:'TDSM',
       name:"Rudra Pratap Singh Ranawat",
-      position:"Member"
+      position:"Data Science Member"
     },
     {
       id:'TDSM',
       name:"Shivani Arora",
-      position:"Member",
+      position:"Data Science Member",
       profile:"https://media-exp1.licdn.com/dms/image/C4E03AQG6c96UjBpj4g/profile-displayphoto-shrink_400_400/0/1650295038029?e=1656547200&v=beta&t=qewrFP8sMhZanfBciZ9TQsZPq7flTh-JNEH2EDfouPs",
       linkedin:"https://www.linkedin.com/in/shivani-arora29/"
     },
@@ -311,13 +342,13 @@ export const navItems = [
     {
       id:'TCM',
       name:"Harshul Nanwani",
-      position:"Member",
+      position:"Cloud Member",
       linkedin:"https://www.linkedin.com/in/harshulnanwani2611/"
     },
     {
       id:'TCM',
       name:"Ayush Thakur",
-      position:"Member",
+      position:"Cloud Member",
       profile:"https://media-exp1.licdn.com/dms/image/C5603AQE__W73sShvNA/profile-displayphoto-shrink_400_400/0/1639492918964?e=1656547200&v=beta&t=IJ_DProGxfIUSgnGnAPXIlxQz-tiXyDKjH0JQdLnQBw",
       linkedin:"https://www.linkedin.com/in/ayush-thakur-1b1127221/"
     }

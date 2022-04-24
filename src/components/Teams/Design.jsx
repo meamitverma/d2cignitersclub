@@ -39,7 +39,7 @@ function Design() {
   return (
     <Teams>
       <Head>
-        <h1>Design Team</h1>
+        <h1 style={{userSelect:"none"}}>Design Team</h1>
         <LeadMember>
         {
             members.map((member) => {

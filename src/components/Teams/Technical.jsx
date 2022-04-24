@@ -41,7 +41,7 @@ function Technical() {
   return (
     <Teams>
       <Head>
-        <h1>Techical Team</h1>
+        <h1 style={{userSelect:"none"}}>Techical Team</h1>
         <LeadMember>
         {
             members.map((member) => {
