@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import d2clogo from '../assets/images/logo/ignitersclub_logo.jpg'
@@ -97,10 +97,10 @@ const SocialLinkContainer = styled.div`
 `;
 const ContactContainer = styled.div`
   display: flex;
-  column-gap: 11px;
+  column-gap: 7px;
 `;
 const ContactInputFields = styled.div`
-  flex:2;
+  
 `;
 const TextField = styled.input`
   height: 34px;
@@ -108,11 +108,20 @@ const TextField = styled.input`
   border-radius: 50px;
 `;
 const ContactButton = styled.a`
-  flex:1;
+  display: flex;
+  font-size:13px;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  background-color: white;
-  color: black;
-  text-align: center;
+  background-color: #191919;
+  color: #ffffff;
+  border-radius: 50px;
+  border: 1px solid #616161;
+  padding: 11px;
+
+  &:hover{
+    background-color: #1975ca;
+  }
 `;
 
 const List = styled.div`
@@ -144,6 +153,12 @@ const Copyright = styled.div`
 `;
 
 function Footer() {
+
+  const [message,setMessage] = useState('Hello!');
+
+  const handleOnKeyPress = ()=>{
+    setMessage(document.getElementById('messageTextField').value);
+  }
 
   return (
     <Container>
@@ -199,11 +214,11 @@ function Footer() {
           <ContactContainer>
             <ContactInputFields>
                 {/* <TextField type="text" palceholder="Name"></TextField> */}
-                <TextField type="text" placeholder="Write your query"></TextField>
+                <TextField type="text" onKeyUp={handleOnKeyPress} id='messageTextField' name="Your Message" placeholder="Write your message"></TextField>
             </ContactInputFields>
 
-            <ContactButton href="mailto: abc@example.com" target="_">
-                      Submit
+            <ContactButton href={`mailto:vitb.d2cigniters@gmail.com?subject=Feedback from website&body=${message}`} target="_">
+                      <p>Submit</p>
             </ContactButton>
 
           </ContactContainer>
