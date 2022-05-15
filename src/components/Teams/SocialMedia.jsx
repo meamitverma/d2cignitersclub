@@ -26,6 +26,7 @@ const Body = styled.div`
 
   @media screen and (max-width:700px){
     flex-direction: column;
+    overflow: auto;
   }
 
 `;

@@ -16,13 +16,14 @@ const link_github = "https://www.linkedin.com/company/d2cignitersclub-vitbhopal/
 
 const Container = styled.div`
   /* width: 100% ; */
+  /* display: block; */
   padding: 40px;
   padding-bottom: 10px;
   background-color: #191919;
   color: white;
   
   @media screen and (max-width: 700px) {
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
   }
 `;
 const Wrapper = styled.div`

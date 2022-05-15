@@ -6,6 +6,7 @@ import { members } from "../data";
 import Footer from "./Footer";
 
 const Container = styled.div`
+  /* display: block; */
   margin-top: 37px;
   margin-bottom: 10px;
   height: 100vh;
@@ -59,6 +60,8 @@ const Core = styled.div`
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
+    height: 250px;
+    /* overflow: auto; */
   }
 `;
 
@@ -175,6 +178,7 @@ function Team() {
           {TeamList[teamIndex]}
           <Arrow dir="right" onClick={() => handleArrowClick("right")}></Arrow>
         </Core>
+        {/* <span><Footer/></span> */}
       </Wrapper>
     </Container>
   );
