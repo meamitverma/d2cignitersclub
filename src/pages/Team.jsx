@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Member from "../components/Member";
 import { TeamList } from "../data";
 import { members } from "../data";
+import Footer from "./Footer";
 
 const Container = styled.div`
   margin-top: 37px;
@@ -14,6 +15,11 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  /* flex-direction: column; */
+  
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 const Lead = styled.div`
   flex: 1;
@@ -26,6 +32,10 @@ const Lead = styled.div`
   border-right: 1px solid #737373;
   row-gap: 27px;
   /* border-radius: 5px; */
+
+  @media screen and (max-width:700px) {
+    padding: 27px 0px;
+  }
 `;
 const President = styled.div`
   display: flex;
@@ -46,6 +56,10 @@ const Core = styled.div`
   row-gap: 27px;
   position: relative;
   transition: 0.3s all ease;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 const Arrow = styled.div`

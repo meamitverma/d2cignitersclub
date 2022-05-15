@@ -15,10 +15,18 @@ const Teams = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Heading = styled.div``;
+const Heading = styled.div`
+  @media screen and (max-width:700px){
+    margin-top: 11px;
+  }
+`;
 const Body = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width:700px){
+    flex-direction: column;
+  }
 `;
 const Left = styled.div`
   flex: 1;
@@ -27,6 +35,13 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-left: 87px;
+
+  @media screen and (max-width:700px){
+    /* margin: 7px 17px; */
+    margin: 7px 17px;
+    text-align: center;
+    color: #dedede;
+  }
 `;
 const Desc = styled.p``;
 const Right = styled.div`
@@ -35,6 +50,10 @@ const Right = styled.div`
   row-gap: 17px;
   flex: 2;
   margin-right: 67px;
+
+  @media screen and (max-width:700px) {
+    margin: 7px 35px;
+  }
 `;
 const Head = styled.div`
   display: flex;
@@ -58,6 +77,7 @@ const TeamMember = styled.div`
 
 function EventMangement() {
   return (
+    <>
     <Teams>
       <Heading>
         <h1 style={{ userSelect: "none" }}>Event Management Team</h1>
@@ -116,6 +136,7 @@ function EventMangement() {
         </Right>
       </Body>
     </Teams>
+    </>
   );
 }
 

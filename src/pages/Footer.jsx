@@ -20,6 +20,10 @@ const Container = styled.div`
   padding-bottom: 10px;
   background-color: #191919;
   color: white;
+  
+  @media screen and (max-width: 700px) {
+    margin-top: 100vh;
+  }
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -141,6 +145,7 @@ const Link = styled.a`
 const CopyrightContainer = styled.div`
   margin-top: 7vw;
   user-select: none;
+  /* background-color: red; */
   /* position: relative; */
 `;
 const Copyright = styled.div`
