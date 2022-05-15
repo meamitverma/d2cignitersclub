@@ -25,6 +25,13 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media screen and (max-width: 700px){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 47px;
+  }
 `;
 
 const Col1 = styled.div`
@@ -38,12 +45,17 @@ const Col1 = styled.div`
   /* background-color: #e0e0e0; */
   /* border-radius: 25px; */
   /* position: relative; */
+
+  @media screen and (max-width:700px){
+    margin: 0px;
+  }
 `;
 const LogoTitle = styled.h2`
   /* position: absolute; */
   /* margin-top: 15px; */
   user-select: none;
   letter-spacing: 2px;
+  white-space: nowrap;
 `;
 
 const LogoContainer = styled.div`
@@ -77,6 +89,30 @@ const SocialLinkContainer = styled.div`
   display: flex;
   column-gap: 10px;
   flex-wrap: wrap;
+
+  @media screen and (max-width:700px) {
+    justify-content: center;
+  }
+
+`;
+const ContactContainer = styled.div`
+  display: flex;
+  column-gap: 11px;
+`;
+const ContactInputFields = styled.div`
+  flex:2;
+`;
+const TextField = styled.input`
+  height: 34px;
+  padding-left: 10px;
+  border-radius: 50px;
+`;
+const ContactButton = styled.a`
+  flex:1;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  text-align: center;
 `;
 
 const List = styled.div`
@@ -157,6 +193,21 @@ function Footer() {
             <SocialLink icon={icon_linkedin} link={link_linkedin} target='_'/>
             <SocialLink icon={icon_github} link={link_github} target='_'/>
           </SocialLinkContainer>
+
+          <br></br>
+          <h4>Contact</h4>
+          <ContactContainer>
+            <ContactInputFields>
+                {/* <TextField type="text" palceholder="Name"></TextField> */}
+                <TextField type="text" placeholder="Write your query"></TextField>
+            </ContactInputFields>
+
+            <ContactButton href="mailto: abc@example.com" target="_">
+                      Submit
+            </ContactButton>
+
+          </ContactContainer>
+
         </Col4>
       
       </Wrapper>

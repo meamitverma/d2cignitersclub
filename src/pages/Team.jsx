@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Member from "../components/Member";
 import { TeamList } from "../data";
@@ -7,17 +7,16 @@ import { members } from "../data";
 const Container = styled.div`
   margin-top: 37px;
   margin-bottom: 10px;
-  height: 80vh;
+  height: 100vh;
   row-gap: 10px;
 `;
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
- 
 `;
 const Lead = styled.div`
-  flex:1;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +47,7 @@ const Core = styled.div`
   position: relative;
   transition: 0.3s all ease;
 `;
+
 const Arrow = styled.div`
   width: 40px;
   height: 40px;
@@ -57,7 +57,7 @@ const Arrow = styled.div`
   /* background-image: url(https://img.icons8.com/external-becris-lineal-becris/344/0/external-left-arrow-mintab-for-ios-becris-lineal-becris.png); */
   background-repeat: no-repeat;
   background-position: 30% center;
-  transform: scaleX(${props=> props.dir === "right" && -1});
+  transform: scaleX(${(props) => props.dir === "right" && -1});
   background-size: 55%;
   border-radius: 50%;
   border: 1px solid #ffffff;
@@ -73,7 +73,7 @@ const Arrow = styled.div`
   z-index: 2;
   transition: all 0.2s ease;
 
-  &:hover{
+  &:hover {
     /* background-color: #000000; */
     border: none;
     background-color: #2194ff;
@@ -81,8 +81,6 @@ const Arrow = styled.div`
     /* background-image: url(https://img.icons8.com/external-becris-lineal-becris/344/ffffff/external-left-arrow-mintab-for-ios-becris-lineal-becris.png); */
   }
 `;
-
-
 
 function Team() {
   const [teamIndex, setIndex] = useState(0);
@@ -96,16 +94,12 @@ function Team() {
         // slideIndex > 0 ? slideIndex - 1 : upcomingEvents.length - 1
         teamIndex > 0 ? teamIndex - 1 : TeamList.length - 1
       );
-    } 
-    else {
-      setIndex(
-        teamIndex < TeamList.length - 1 ? teamIndex + 1 : 0
-      );
+    } else {
+      setIndex(teamIndex < TeamList.length - 1 ? teamIndex + 1 : 0);
     }
 
     // console.log(teamIndex);
   };
-
 
   //hits handleArrowCLick() function every few sec
   // const MINUTE_MS = 1000;
@@ -113,12 +107,11 @@ function Team() {
   //   const interval = setInterval(() => {
   //     setIndex(teamIndex+1)
   //   }, MINUTE_MS);
-  
+
   //   return () => clearInterval(interval);
   // }, [])
-  
 
-    // console.log(slideIndex)
+  // console.log(slideIndex)
 
   return (
     <Container id="team">
@@ -165,7 +158,7 @@ function Team() {
 
         <Core>
           <Arrow dir="left" onClick={() => handleArrowClick("left")}></Arrow>
-          {TeamList[teamIndex]} 
+          {TeamList[teamIndex]}
           <Arrow dir="right" onClick={() => handleArrowClick("right")}></Arrow>
         </Core>
       </Wrapper>

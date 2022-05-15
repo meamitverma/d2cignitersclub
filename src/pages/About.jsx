@@ -3,6 +3,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
   color: white;
   margin-left: 20px;
 `;
@@ -19,12 +22,12 @@ function About() {
     <Container id="about">
       <Title>About</Title>
       <Info>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde
-        deserunt ratione magni porro, nostrum possimus praesentium mollitia
-        sint. Quasi ducimus delectus impedit aliquam hic at reprehenderit
-        officia natus ullam culpa maxime blanditiis nemo odio, iure ex expedita
-        asperiores possimus voluptatibus fuga error eveniet sit accusamus.
-        Tenetur sequi sit ducimus!
+      "Potential is a priceless treasure, like gold. Everyone has gold hidden within, but we have to dig to get it out."
+      <br></br>
+      <br></br>Dare2Compete Igniters Club was started in 2021 with the vision of bringing together diverse minds, giving them a way to learn new things and boost their confidence. 
+      <br></br>
+      <br></br>D2C Igniters club not only focuses on a particular skill of a student but it also helps in his overall development. One of the main goals of this club is to make students ready for this ever-growing competitive land. It’s a place to learn, compete and grow.
+
       </Info>
     </Container>
   );

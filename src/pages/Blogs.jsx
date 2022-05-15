@@ -8,12 +8,22 @@ const borderRadius = "21px";
 
 const Container = styled.div`
   margin: 35px 55px;
+
+  @media screen and (max-width:700px){
+    margin: 35px 7px;
+  }
 `;
 const Wrapper = styled.div`
   height: 70vh;
   /* box-shadow: 1px 1px 10px #fff; */
   border-radius: ${borderRadius}; ///border radius for whole wrapper
   display: flex;
+
+  @media screen and (max-width:700px) {
+    flex-direction: column;
+    row-gap: 3px;
+  }
+
 `;
 const Left = styled.div`
   flex: 1;
@@ -25,6 +35,11 @@ const Left = styled.div`
   background-color: #131313;
   border-radius: ${borderRadius} 0px 0px ${borderRadius};
   position: relative;
+
+  @media screen and (max-width: 700px) {
+    border-radius: ${borderRadius};
+  }
+
 `;
 const Heading = styled.h1`
   color: gold;
@@ -39,6 +54,12 @@ const Video = styled.iframe`
   /* width: 30vw;
   height: 36vh; */
   border: none;
+
+  @media screen and (max-width: 700px) {
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: 100%;
+  }
 `;
 const Right = styled.div`
   flex: 1;
@@ -50,14 +71,25 @@ const Right = styled.div`
   border-radius: 0px ${borderRadius} ${borderRadius} 0px;
   border: 2px solid lightgrey;
   border-left: none;
+
+  @media screen and (max-width:700px) {
+    border-radius: ${borderRadius};
+    height: 375px;
+  }
 `;
 const MediumLogoContainer = styled.div`
   display: flex;
   width: 100%;
+
+  
+
 `;
 const MediumLogo = styled.img`
   height: 124px;
   justify-self: flex-start;
+
+  border-radius : ${borderRadius}; //testing
+
 `;
 const BlogContainer = styled.ul`
   /* scrollbar-color: dark; */
@@ -68,6 +100,10 @@ const BlogContainer = styled.ul`
   width: 100%;
   overflow: auto;
   background-color: #ffffff;
+
+  @media screen and (max-width: 700px) {
+    /* border-radius:${borderRadius}; */
+  }
 `;
 const BlogItemContainer = styled.li``;
 const BlogItem = styled.a`

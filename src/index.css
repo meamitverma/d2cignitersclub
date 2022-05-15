@@ -3,4 +3,5 @@
   scroll-behavior:smooth;
   scroll-margin: 70px;
   font-family: 'Urbanist', sans-serif;
+  /* overflow: hidden; */
 }

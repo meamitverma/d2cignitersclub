@@ -15,6 +15,12 @@ const Container = styled.div`
   color: white;
   user-select: none;
   z-index: 10;
+  
+  @media screen and (max-width:700px) {
+    width: 100%;
+    height: auto;
+  }
+
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -22,6 +28,11 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 10px 20px;
   justify-content: space-between;
+
+  @media screen and (max-width:700px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Left = styled.div`
@@ -42,6 +53,13 @@ const Title = styled.h1`
 const Middle = styled.div`
   flex: 3;
   display: flex;
+  column-gap: 90px;
+  
+  @media screen and (max-width:700px) {
+    display: none;
+    flex-direction: column;
+    align-self: center;
+  }
 `;
 const Navitem = styled.a`
   text-decoration: none;
@@ -49,6 +67,10 @@ const Navitem = styled.a`
   margin-right: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:focus{
+    outline: none;
+  }
 
   &:hover {
     /* filter: brightness(80%); */

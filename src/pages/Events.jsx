@@ -9,6 +9,12 @@ const Container = styled.div`
   height: 80vh;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width:700px) {
+    overflow: visible;
+    overflow-x: hidden;
+    height: auto;//
+  }
 `;
 const Arrow = styled.div`
   width: 40px;
@@ -49,12 +55,17 @@ const Wrapper = styled.div`
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 const Slide = styled.div`
+  background-color: ${(props) => props.bgcolor};
   flex-shrink: 0;
   height: 80vh;
   width: 100vw;
   display: flex;
-  background-color: ${(props) => props.bgcolor};
   align-items: center;
+
+  @media screen and (max-width:700px) {
+    flex-direction: column;
+  }
+
 `;
 
 const Left = styled.div`
@@ -63,10 +74,21 @@ const Left = styled.div`
   flex-direction: column;
   align-items: center;
   margin-left: 55px;
+  
+  @media screen and (max-width:700px) {
+    display: none;
+  }
+
+
+
 `;
 const Poster = styled.img`
   height: 80vh;
   object-fit: contain;
+
+  @media screen and (max-width:700px) {
+    height: 10vh;
+  }
 `;
 
 const Right = styled.div`
@@ -80,6 +102,10 @@ const Right = styled.div`
   height: 80vh;
   /* margin-left: 10px; */
   margin-right: 110px;
+
+  @media screen and (max-width:700px){
+    margin: 0px 55px;
+  }
 `;
 const VideoContainer = styled.div`
   display: flex;
@@ -89,6 +115,13 @@ const Video = styled.iframe`
   width: 30vw;
   height: 36vh;
   border: none;
+
+  @media screen and (max-width:700px) {
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: 100%;
+  }
+
 `;
 const Heading = styled.h1``;
 const EventDesc = styled.p``;

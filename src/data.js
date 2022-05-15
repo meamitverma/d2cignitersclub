@@ -78,7 +78,7 @@ export const navItems = [
       short_desc:"Ten years ago, I realized media literacy meant something different",
       author:"Douglas Rushkoff",
       date_posted:"Apr 12",
-      reading_time:"3 min",
+      reading_time:"3 min read",
       category:"Computer",
       link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
     },
@@ -88,7 +88,7 @@ export const navItems = [
       short_desc:"Ten years ago, I realized media literacy meant something different",
       author:"Douglas Rushkoff",
       date_posted:"Apr 12",
-      reading_time:"3 min",
+      reading_time:"3 min read",
       category:"Computer",
       link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
     },
@@ -98,7 +98,7 @@ export const navItems = [
       short_desc:"Ten years ago, I realized media literacy meant something different",
       author:"Douglas Rushkoff",
       date_posted:"Apr 12",
-      reading_time:"3 min",
+      reading_time:"3 min read",
       category:"Computer",
       link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
     },
@@ -108,7 +108,7 @@ export const navItems = [
       short_desc:"Ten years ago, I realized media literacy meant something different",
       author:"Douglas Rushkoff",
       date_posted:"Apr 12",
-      reading_time:"3 min",
+      reading_time:"3 min read",
       category:"Computer",
       link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
     }
@@ -162,12 +162,18 @@ export const navItems = [
     },
     {
       id:'EL',
+      name:"Vedanshu Sharma",
+      position:"Co Lead"
+      // profile:"https://media-exp1.licdn.com/dms/image/C5603AQGyGnRRXQ_nHg/profile-displayphoto-shrink_400_400/0/1642603721368?e=1656547200&v=beta&t=MGclIlTsuA23at5fnR-jTrnmpTtmASPSIN9RWR4Xobs"
+      // linkedin:"https://www.linkedin.com/in/ananta-paliwal-668a6122a/"
+    },
+    {
+      id:'EM',
       name:"Ananta Paliwal",
-      position:"Co Lead",
+      position:"Member",
       profile:"https://media-exp1.licdn.com/dms/image/C5603AQGyGnRRXQ_nHg/profile-displayphoto-shrink_400_400/0/1642603721368?e=1656547200&v=beta&t=MGclIlTsuA23at5fnR-jTrnmpTtmASPSIN9RWR4Xobs",
       linkedin:"https://www.linkedin.com/in/ananta-paliwal-668a6122a/"
     },
-
     {
       id:'EM',
       name:"Saurav Kumar Sahoo",

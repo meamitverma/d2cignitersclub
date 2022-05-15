@@ -28,6 +28,10 @@ const Wrapper = styled.div`
   height: 100%;
   margin: 10px 5%;
   //z-index: 2;
+
+  @media screen and (max-width:700px){
+    flex-direction: column;
+  } 
 `;
 const Left = styled.div`
   flex: 1;
@@ -40,7 +44,9 @@ const Logo = styled.img`
   /*   
   transform: translate(-45vw,0);
   width: 45px; */
-  
+    @media screen and (max-width:700px){
+      height: 65%;
+    }
   `;
 const Title = styled.h1`
   margin-top: 10px;
@@ -66,6 +72,7 @@ function Home() {
         />
         Your browser does not support the video tag.
       </BGVideo>
+
       <Wrapper>
         <Left>
           <Logo src={d2clogo}></Logo>
