@@ -65,7 +65,12 @@ export const navItems = [
       href: "#blog",
     },
     {
-      id: 5,
+      id:5,
+      title: "to Connect",
+      href: "#toconnect",
+    },
+    {
+      id: 6,
       title: "Team",
       href: "#team",
     },

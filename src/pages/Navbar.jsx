@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { navItems } from "../data";
 
 import logo from "../assets/images/logo/ignitersclub_logo.jpg";
+const vitblogo = 'https://vitbhopal.ac.in/file/2020/01/logochhota.png';
 
-const title = "D2C Igniters club";
+const title = "Igniters club";
 
 const Container = styled.div`
   position: fixed;
@@ -51,9 +52,9 @@ const Title = styled.h1`
 `;
 
 const Middle = styled.div`
-  flex: 3;
+  flex: 2;
   display: flex;
-  column-gap: 90px;
+  justify-content: space-between;
   
   @media screen and (max-width:700px) {
     display: none;
@@ -79,6 +80,17 @@ const Navitem = styled.a`
   }
 `;
 
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  /* background-color: red; */
+`;
+const VITLogo = styled.img`
+  height: 34px;
+`;  
+
 function Navbar() {
   console.log(navItems[0].title);
 
@@ -98,6 +110,9 @@ function Navbar() {
             );
           })}
         </Middle>
+        <Right>
+          <VITLogo src={vitblogo}></VITLogo>
+        </Right>
       </Wrapper>
     </Container>
   );

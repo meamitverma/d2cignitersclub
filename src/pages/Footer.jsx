@@ -172,7 +172,7 @@ function Footer() {
         
         <Col1>
           <Logo src={d2clogo}></Logo>
-          <LogoTitle>D2C Igniters Club</LogoTitle>
+          <LogoTitle>Igniters Club</LogoTitle>
           
         </Col1>
         
@@ -208,7 +208,7 @@ function Footer() {
         </Col3>
         
         <Col4>
-          <h4>Follow us</h4>
+          <h4>Follow Us</h4>
           <SocialLinkContainer>
             <SocialLink icon={icon_insta} link={link_insta}/>
             <SocialLink icon={icon_linkedin} link={link_linkedin} target='_'/>
@@ -216,7 +216,7 @@ function Footer() {
           </SocialLinkContainer>
 
           <br></br>
-          <h4>Contact</h4>
+          <h4>Contact us</h4>
           <ContactContainer>
             <ContactInputFields>
                 {/* <TextField type="text" palceholder="Name"></TextField> */}
@@ -234,7 +234,7 @@ function Footer() {
       </Wrapper>
       <CopyrightContainer>
           <Copyright>
-            <p>&#169; 2022 D2C Igniter's VIT Bhopal. All Rights reserved.</p>
+            <p>&#169; 2022 Igniter's Club VIT Bhopal. All Rights reserved.</p>
             {/* <br></br> */}
             <p style={{fontSize:"smaller"}}>Developed by <a href="https://www.linkedin.com/in/meamitverma/" target="_" style={{textDecoration:"none",color:"inherit",fontWeight:"450"}}>Amit Verma</a></p>
             {/* <p style={{position:"absolute",bottom:0,right:0,textAlign:"center",fontSize:"11px"}}>Developed by <br></br> Amit Kumar Verma</p> */}

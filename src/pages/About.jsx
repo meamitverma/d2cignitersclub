@@ -11,7 +11,6 @@ const Container = styled.div`
 `;
 const Title = styled.h1`
   font-weight: bold;
-  
 `;
 const Info = styled.p`
   font-size: medium;
@@ -22,12 +21,18 @@ function About() {
     <Container id="about">
       <Title>About</Title>
       <Info>
-      "Potential is a priceless treasure, like gold. Everyone has gold hidden within, but we have to dig to get it out."
-      <br></br>
-      <br></br>Dare2Compete Igniters Club was started in 2021 with the vision of bringing together diverse minds, giving them a way to learn new things and boost their confidence. 
-      <br></br>
-      <br></br>D2C Igniters club not only focuses on a particular skill of a student but it also helps in his overall development. One of the main goals of this club is to make students ready for this ever-growing competitive land. It’s a place to learn, compete and grow.
-
+        "Potential is a priceless treasure, like gold. Everyone has gold hidden
+        within, but we have to dig to get it out."
+        <br></br>
+        <br></br>Igniters Club which is powered by Unstop (Formerly
+        Dare2Compete) was started in 2021 with the vision of bringing together
+        diverse minds, giving them a way to learn new things and boost their
+        confidence.
+        <br></br>
+        <br></br>This not only focuses on a particular skill of a student but it
+        also helps in his overall development. One of the main goals of this
+        club is to make students ready for this ever-growing competitive land.
+        It’s a place to learn, compete and grow.
       </Info>
     </Container>
   );

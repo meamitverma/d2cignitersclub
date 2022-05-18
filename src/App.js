@@ -7,6 +7,7 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import Team from './pages/Team';
 import Footer from './pages/Footer';
+import Toconnect from './pages/Toconnect';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Home/>
       <Events/>
       <Blogs/>
+      <Toconnect/>
       {/* <About/> */}
       <Team/>
       <Footer/>

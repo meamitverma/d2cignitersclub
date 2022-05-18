@@ -2,14 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Blog from "../components/Blog";
 import { mediumBlogs } from "../data";
+import Toconnect from "./Toconnect";
 
 //Styling
 const borderRadius = "21px";
 
 const Container = styled.div`
   margin: 35px 55px;
-
-  @media screen and (max-width:700px){
+  
+  @media screen and (max-width: 700px) {
+    height: 88em;
     margin: 35px 7px;
   }
 `;
@@ -19,17 +21,17 @@ const Wrapper = styled.div`
   border-radius: ${borderRadius}; ///border radius for whole wrapper
   display: flex;
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     flex-direction: column;
     row-gap: 3px;
   }
-
 `;
 const Left = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 15px;
+  column-gap: 7px;
   align-items: center;
   justify-content: center;
   background-color: #131313;
@@ -38,8 +40,10 @@ const Left = styled.div`
 
   @media screen and (max-width: 700px) {
     border-radius: ${borderRadius};
+    flex: none;
+    row-gap: 7px;
+    flex-direction: column;
   }
-
 `;
 const Heading = styled.h1`
   color: gold;
@@ -54,11 +58,14 @@ const Video = styled.iframe`
   /* width: 30vw;
   height: 36vh; */
   border: none;
+  /* display: none; */
+  aspect-ratio: 9/16;
+  height: 100%;
 
   @media screen and (max-width: 700px) {
-    aspect-ratio: 16/9;
-    height: 100%;
-    width: 100%;
+    aspect-ratio: 9/16;
+    height: 450px;
+    width: auto;
   }
 `;
 const Right = styled.div`
@@ -72,24 +79,21 @@ const Right = styled.div`
   border: 2px solid lightgrey;
   border-left: none;
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     border-radius: ${borderRadius};
-    height: 375px;
+    height: 475px;
+    flex: none;
   }
 `;
 const MediumLogoContainer = styled.div`
   display: flex;
   width: 100%;
-
-  
-
 `;
 const MediumLogo = styled.img`
   height: 124px;
   justify-self: flex-start;
 
-  border-radius : ${borderRadius}; //testing
-
+  border-radius: ${borderRadius}; //testing
 `;
 const BlogContainer = styled.ul`
   /* scrollbar-color: dark; */
@@ -118,12 +122,18 @@ function Blogs() {
         <Left>
           {/* <Heading>Blogs</Heading> */}
           <Video
-            width="560"
-            height="315"
-            src={"https://youtube.com/embed/K4TOrB7at0Y"}
+            // width="560"
+            // height="315"
+            src={"https://youtube.com/embed/ADXqHMgsLao"}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+          ></Video>
+          <Video
+            width="320"
+            height="440"
+            src="http://instagram.com/p/Cdmxc7pqMMQ/embed"
+            frameborder="0"
           ></Video>
         </Left>
         <Right>
@@ -135,23 +145,22 @@ function Blogs() {
           <hr width="100%" color="lightgrey"></hr>
 
           <BlogContainer>
-            {
-              mediumBlogs.map((blogitem) =>{
-                return <BlogItemContainer>
-                <BlogItem href={blogitem.link} target="_">
-                  <Blog
-                    author={blogitem.author}
-                    title={blogitem.title}
-                    desc={blogitem.short_desc}
-                    date={blogitem.date_posted}
-                    read_time={blogitem.reading_time}
-                    category={blogitem.category}
-                  />
-                </BlogItem>
-              </BlogItemContainer>
-              })
-            }
-
+            {mediumBlogs.map((blogitem) => {
+              return (
+                <BlogItemContainer>
+                  <BlogItem href={blogitem.link} target="_">
+                    <Blog
+                      author={blogitem.author}
+                      title={blogitem.title}
+                      desc={blogitem.short_desc}
+                      date={blogitem.date_posted}
+                      read_time={blogitem.reading_time}
+                      category={blogitem.category}
+                    />
+                  </BlogItem>
+                </BlogItemContainer>
+              );
+            })}
           </BlogContainer>
         </Right>
       </Wrapper>

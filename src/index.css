@@ -1,7 +1,9 @@
+
 *{
   margin: 0;
   scroll-behavior:smooth;
   scroll-margin: 70px;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
   /* overflow: hidden; */
 }
