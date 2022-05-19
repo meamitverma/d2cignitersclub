@@ -103,13 +103,16 @@ const BlogContainer = styled.ul`
   height: 100%;
   width: 100%;
   overflow: auto;
+  /* padding: 7px 0px; */
   background-color: #ffffff;
 
   @media screen and (max-width: 700px) {
-    /* border-radius:${borderRadius}; */
+    border-radius:0px 0px ${borderRadius} ${borderRadius};
   }
 `;
-const BlogItemContainer = styled.li``;
+const BlogItemContainer = styled.li`
+  /* padding: 7px 0px; */
+`;
 const BlogItem = styled.a`
   text-decoration: none;
   /* color: inherit; */

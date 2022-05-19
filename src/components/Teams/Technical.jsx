@@ -18,6 +18,7 @@ const Teams = styled.div`
   justify-content: center;
 `;
 const Heading = styled.div`
+  text-align: center; 
   @media screen and (max-width:700px){
     margin-top: 11px;
   }

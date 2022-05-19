@@ -14,6 +14,10 @@ const Title = styled.h1`
 `;
 const Info = styled.p`
   font-size: medium;
+
+  @media screen and (max-width: 700px) {
+    font-size: 0.88em;
+  }
 `;
 
 function About() {

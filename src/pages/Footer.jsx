@@ -234,7 +234,7 @@ function Footer() {
       </Wrapper>
       <CopyrightContainer>
           <Copyright>
-            <p>&#169; 2022 Igniter's Club VIT Bhopal. All Rights reserved.</p>
+            <p style={{textAlign:'center'}}>&#169; 2022 Igniter's Club VIT Bhopal. All Rights reserved.</p>
             {/* <br></br> */}
             <p style={{fontSize:"smaller"}}>Developed by <a href="https://www.linkedin.com/in/meamitverma/" target="_" style={{textDecoration:"none",color:"inherit",fontWeight:"450"}}>Amit Verma</a></p>
             {/* <p style={{position:"absolute",bottom:0,right:0,textAlign:"center",fontSize:"11px"}}>Developed by <br></br> Amit Kumar Verma</p> */}

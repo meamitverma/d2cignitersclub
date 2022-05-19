@@ -3,13 +3,14 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     width: 100%;
-    height:137px;
+    /* height:137px; */
     border-bottom: 2px solid lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 7px;
     transition: 0.3s all ease;
+    padding: 7px 0px ;
 
     &:hover{
         background-color: #1974ca44;

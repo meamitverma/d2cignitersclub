@@ -28,7 +28,7 @@ const Middle =  styled.div`
 `;
 const Right =  styled.div`
     flex: 1;
-    color: whitesmoke;
+    color: white;
     background-color: #7FB5FF;
 `;
 
@@ -89,7 +89,7 @@ function Toconnect() {
         <Right>
             <Wrapper>
                 <LogoContainer>
-                    <Logo src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1652893430~hmac=6f184afe11e48218e8657cdff72b0130"></Logo>
+                    <Logo src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1652962791~hmac=ea591261fa2d9ca3f4505ea6928ce3af"></Logo>
                 </LogoContainer>
                 <Link href='https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/' target="_">Connect {'>'} </Link>
             </Wrapper>  

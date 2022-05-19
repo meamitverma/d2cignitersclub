@@ -78,44 +78,34 @@ export const navItems = [
 
   export const mediumBlogs=[
     {
-      id:1,
-      title:"Program or be Programmed",
-      short_desc:"Ten years ago, I realized media literacy meant something different",
-      author:"Douglas Rushkoff",
-      date_posted:"Apr 12",
-      reading_time:"3 min read",
-      category:"Computer",
-      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+      id:3,
+      title:"How to Become a Cloud Developer ?",
+      short_desc:"Cloud computing offers an attractive career path for people who are looking to work in IT or for people already established in the traditional IT landscape who want to re-skill and enter the world of cloud computing",
+      author:"Ayush Thakur",
+      date_posted:"May 19",
+      reading_time:"4 min read",
+      category:"Cloud",
+      link:"https://medium.com/@vitb.d2cigniters/how-to-become-a-cloud-developer-975e99c65e54"
     },
     {
       id:2,
-      title:"Program or be Programmed",
-      short_desc:"Ten years ago, I realized media literacy meant something different",
-      author:"Douglas Rushkoff",
-      date_posted:"Apr 12",
-      reading_time:"3 min read",
-      category:"Computer",
-      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+      title:"Beginner’s Guide to Data Science",
+      short_desc:"Data science uses sophisticated machine learning algorithms to create predictable models",
+      author:"Shivani Arora",
+      date_posted:"May 19",
+      reading_time:"4 min read",
+      category:"Data Science",
+      link:"https://medium.com/@vitb.d2cigniters/beginners-guide-to-data-science-33a49248e6fc"
     },
     {
-      id:3,
-      title:"Program or be Programmed",
-      short_desc:"Ten years ago, I realized media literacy meant something different",
-      author:"Douglas Rushkoff",
-      date_posted:"Apr 12",
-      reading_time:"3 min read",
-      category:"Computer",
-      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
-    },
-    {
-      id:4,
-      title:"Program or be Programmed",
-      short_desc:"Ten years ago, I realized media literacy meant something different",
-      author:"Douglas Rushkoff",
-      date_posted:"Apr 12",
-      reading_time:"3 min read",
-      category:"Computer",
-      link:"https://rushkoff.medium.com/program-or-be-programmed-633fb8f045f3"
+      id:1,
+      title:"Road to Front-end Web Development",
+      short_desc:"As the name suggests, is the building of new websites with your own design and layouts, as well as the maintaining and updating of existing ones",
+      author:"Vidushi Pandey",
+      date_posted:"May 19",
+      reading_time:"4 min read",
+      category:"Front-end",
+      link:"https://medium.com/@vitb.d2cigniters/road-to-front-end-web-development-6deab92060f0"
     }
   ];
 

@@ -9,8 +9,12 @@ const Container = styled.div`
   /* display: block; */
   margin-top: 37px;
   margin-bottom: 10px;
-  height: 100vh;
+  height: 45em;
   row-gap: 10px;
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+  }
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -60,7 +64,7 @@ const Core = styled.div`
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
-    height: 250px;
+    /* height: 250px; */
     /* overflow: auto; */
   }
 `;
