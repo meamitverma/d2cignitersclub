@@ -60,6 +60,7 @@ const Overlay = styled.div`
 const UserImage = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: contain;
   border-radius: 50%;
 `;
 const Position = styled.div`

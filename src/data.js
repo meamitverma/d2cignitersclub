@@ -158,8 +158,8 @@ export const navItems = [
     {
       id:'EL',
       name:"Vedanshu Sharma",
-      position:"Co Lead"
-      // profile:"https://media-exp1.licdn.com/dms/image/C5603AQGyGnRRXQ_nHg/profile-displayphoto-shrink_400_400/0/1642603721368?e=1656547200&v=beta&t=MGclIlTsuA23at5fnR-jTrnmpTtmASPSIN9RWR4Xobs"
+      position:"Co Lead",
+      profile:require('./assets/images/profile/members/event-management/Vedanshu Sharma_Co-Lead_Events - VEDANSHU SHARMA 20BCY10093.jpg')
       // linkedin:"https://www.linkedin.com/in/ananta-paliwal-668a6122a/"
     },
     {
@@ -172,19 +172,21 @@ export const navItems = [
     {
       id:'EM',
       name:"Saurav Kumar Sahoo",
-      position:"Member"
+      position:"Member",
+      profile:require('./assets/images/profile/members/event-management/Saurav_Member_EventsTeam 2 - SAURAV KUMAR SAHOO 21BCE11615.jpg')
     },
     {
       id:'EM',
       name:"Garima Singh",
       position:"Member",
-      profile:"https://media-exp1.licdn.com/dms/image/C4D03AQFbs14uVdGNVA/profile-displayphoto-shrink_400_400/0/1650441501340?e=1656547200&v=beta&t=Fo5nMmfcDj7PkOZPcPRhlbyyGMHIxbyhUXHfrP_znmc",
+      profile:"https://media-exp1.licdn.com/dms/image/C5603AQHuKozgYvnYKg/profile-displayphoto-shrink_800_800/0/1650955798327?e=1658361600&v=beta&t=hD300mo4A15VVKVLEGClbu0ugUKE_d5WIp9ZIk1KZ5c",
       linkedin:"https://www.linkedin.com/in/garima-singh-491787225/"
     },
     {
       id:'EM',
       name:"Gourang Agrawal",
-      position:"Member"
+      position:"Member",
+      profile:require('./assets/images/profile/members/event-management/AS - GOURANG AGRAWAL 21BAI10318.jpg')
     },
 
 
@@ -207,7 +209,8 @@ export const navItems = [
     {
       id:'SMM',
       name:"Arkoyoti Dey",
-      position:"Member"
+      position:"Member",
+      profile: require("./assets/images/profile/members/social-media/Photo - ARKOJYOTI DEY 20BCE11067.jpg")
     },
     {
       id:'SMM',
@@ -259,7 +262,8 @@ export const navItems = [
     {
       id:'CL',
       name:"Deepika Shesh Srivastav",
-      position:"Lead"
+      position:"Lead",
+      profile:require('./assets/images/profile/members/content/Deepika S. Srivastava - Lead (Content Team) - DEEPIKA SHESH SRIVASTAVA 20BAI10319.png')
     },
     {
       id:'CL',
@@ -271,8 +275,9 @@ export const navItems = [
 
     {
       id:'CM',
-      name:"Ayushi Bhuyan",
-      position:"Member"
+      name:"Ayushri Bhuyan",
+      position:"Member",
+      profile: require('./assets/images/profile/members/content/Ayushri Bhuyan - member - content - AYUSHRI BHUYAN 21BAI10267.jpeg')
     },
     {
       id:'CM',
@@ -329,7 +334,8 @@ export const navItems = [
     {
       id:'TDSM',
       name:"Rudra Pratap Singh Ranawat",
-      position:"Data Science Member"
+      position:"Data Science Member",
+      profile: require('./assets/images/profile/members/technical/Rudra Pratap Singh Ranawat 20BAI10247 - RUDRA PRATAP SINGH RANAWAT 20BAI10247.jfif')
     },
     {
       id:'TDSM',
@@ -344,7 +350,8 @@ export const navItems = [
       id:'TCM',
       name:"Harshul Nanwani",
       position:"Cloud Member",
-      linkedin:"https://www.linkedin.com/in/harshulnanwani2611/"
+      linkedin:"https://www.linkedin.com/in/harshulnanwani2611/",
+      profile: require('./assets/images/profile/members/technical/WhatsApp Image 2021-07-19 at 3.35.25 PM - HARSHUL NANWANI 20BCE10223.jpeg')
     },
     {
       id:'TCM',

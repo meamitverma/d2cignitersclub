@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { navItems } from "../data";
 
 import logo from "../assets/images/logo/ignitersclub_logo.jpg";
-const vitblogo = 'https://vitbhopal.ac.in/file/2020/01/logochhota.png';
+const vitblogo = "https://vitbhopal.ac.in/file/2020/01/logochhota.png";
 
 const title = "Igniters club";
 
@@ -16,12 +16,11 @@ const Container = styled.div`
   color: white;
   user-select: none;
   z-index: 10;
-  
-  @media screen and (max-width:700px) {
+
+  @media screen and (max-width: 700px) {
     width: 100%;
     height: auto;
   }
-
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -30,7 +29,7 @@ const Wrapper = styled.div`
   padding: 10px 20px;
   justify-content: space-between;
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -55,8 +54,8 @@ const Middle = styled.div`
   flex: 2;
   display: flex;
   justify-content: space-between;
-  
-  @media screen and (max-width:700px) {
+
+  @media screen and (max-width: 700px) {
     display: none;
     flex-direction: column;
     align-self: center;
@@ -69,7 +68,7 @@ const Navitem = styled.a`
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 
@@ -89,7 +88,7 @@ const Right = styled.div`
 `;
 const VITLogo = styled.img`
   height: 34px;
-`;  
+`;
 
 function Navbar() {
   console.log(navItems[0].title);

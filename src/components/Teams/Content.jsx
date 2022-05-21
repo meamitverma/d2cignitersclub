@@ -115,6 +115,7 @@ function Content() {
                 if (member.id === CONTENT_LEAD_ID)
                   return (
                     <Member
+                      // profile={}
                       profile={member.profile}
                       position={member.position}
                       name={member.name}
