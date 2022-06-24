@@ -3,16 +3,13 @@ import styled from 'styled-components'
 
 import d2clogo from '../assets/images/logo/ignitersclub_logo.jpg'
 import SocialLink from '../components/SocialLink';
+import { social_links } from '../data';
 
 // Icons
 const icon_insta = 'https://img.icons8.com/ios-filled/344/ffffff/instagram-new--v1.png';
 const icon_linkedin = 'https://img.icons8.com/ios-filled/344/ffffff/linkedin-circled.png';
 const icon_github = 'https://img.icons8.com/glyph-neue/344/ffffff/github.png';
-
-//Links
-const link_insta = "https://www.instagram.com/d2cignitersclub_vitb/";
-const link_linkedin = "https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/";
-const link_github = "https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/";
+const icon_youtube = 'https://img.icons8.com/ios-glyphs/344/ffffff/youtube-play.png'
 
 const Container = styled.div`
   /* width: 100% ; */
@@ -70,7 +67,7 @@ const LogoContainer = styled.div`
 const Logo = styled.img`
   margin-bottom: 15px;
   border-radius: 50%;
-  width: 35%;
+  height: 11rem;
 `;
 
 const Col2 = styled.div`
@@ -191,6 +188,9 @@ function Footer() {
             <ListItems>
               <Link href='#team'>Team</Link>
             </ListItems>
+            <ListItems>
+              <Link href='#toconnect'>To Connect</Link>
+            </ListItems>
           </List>
         </Col2>
 
@@ -210,9 +210,10 @@ function Footer() {
         <Col4>
           <h4>Follow Us</h4>
           <SocialLinkContainer>
-            <SocialLink icon={icon_insta} link={link_insta}/>
-            <SocialLink icon={icon_linkedin} link={link_linkedin} target='_'/>
-            <SocialLink icon={icon_github} link={link_github} target='_'/>
+            <SocialLink hovercolor='#F73D93' icon={icon_insta} link={social_links.instagram.link} target='_'/>
+            <SocialLink hovercolor='#1975ca' icon={icon_linkedin} link={social_links.linkedin.link} target='_'/>
+            <SocialLink hovercolor='red' icon={icon_youtube} link={social_links.youtube.link} target='_'/>
+            {/* <SocialLink icon={icon_github} link={link_github} target='_'/> */}
           </SocialLinkContainer>
 
           <br></br>

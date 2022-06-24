@@ -14,7 +14,7 @@ const Container = styled.div`
     cursor: pointer;
     
     &:hover{
-        background-color: #1975ca;
+        background-color: ${props => props.hovercolor};
     }
 `;
 const Wrapper = styled.a`
@@ -30,7 +30,7 @@ const Icon = styled.img`
 function SocialLink(props) {
 
   return (
-    <Container size={props.size}>
+    <Container size={props.size} hovercolor={props.hovercolor}>
         <Wrapper href={props.link} target='_'>
             <Icon src={props.icon}></Icon>
         </Wrapper>

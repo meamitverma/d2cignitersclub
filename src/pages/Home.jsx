@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import About from "./About";
 import d2clogo from "../assets/images/logo/ignitersclub_logo.jpg";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import homebg from "../assets/video/bg/homebg.mp4";
 
 const Container = styled.div`
@@ -23,8 +23,6 @@ const BGVideo = styled.video`
   z-index: -1;
   top: 0;
   left: 0;
-
-  
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -46,6 +44,7 @@ const Left = styled.div`
 const Logo = styled.img`
   border-radius: 50%;
   transition: all 1s ease;
+  height: 22rem;
   /* border: 5px solid black; */
   /*   
   transform: translate(-45vw,0);
@@ -66,9 +65,23 @@ const Right = styled.div`
   flex: 1;
 `;
 
+// const moveInLeft = keyframes`
+//   0%{
+//     transform: translateX(100px);
+//   }
+
+//   80% {
+//     transform: translateX(-10px);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// `;
+
 const CurrentDateTimeContainer = styled.div`
   position: absolute;
-  /* background-image: linear-gradient(#0000009e,#2020217b), url('https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000'); */
+  /* background-image: li{near-gradient(#0000009e,#2020217b), url('https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000'); */
   background-color: #1975ca;
   height: auto;
   width: 15em;
@@ -83,13 +96,12 @@ const CurrentDateTimeContainer = styled.div`
   color: #f0f0f0;
   user-select: none;
   transition: 01s transform ease;
-  
-  &:hover{
-    transform: translateX(10px)
-  }
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     top: 0;
+    padding: 0% 2%;
+    width: max-content;
+    background-color: #1974ca00;
   }
 `;
 
@@ -116,26 +128,33 @@ function Home() {
     "November",
     "December",
   ];
-  const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+  const dayNames = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
 
-  const [time,setTime] = useState("00:00:00");
+  const [time, setTime] = useState("00:00:00");
 
   let today = new Date();
-  let day = dayNames[today.getDay() - 1]
+  let day = dayNames[today.getDay() - 1];
   let date = today.getDate();
   let month = monthNames[today.getMonth()];
   let year = today.getFullYear();
 
   useEffect(() => {
-   const timer = setInterval(() => {
-    setTime(today.toLocaleTimeString());
-  }, 1000);
+    const timer = setInterval(() => {
+      setTime(today.toLocaleTimeString());
+    }, 1000);
 
-  return () => {
-    clearInterval(timer);
-  };
-});
-  
+    return () => {
+      clearInterval(timer);
+    };
+  });
 
   return (
     <Container>
@@ -146,7 +165,7 @@ function Home() {
 
       <CurrentDateTimeContainer>
         <Time>{time}</Time>
-        <Dates>{day + ', ' + date + ' ' + month + ' ' + year }</Dates>
+        <Dates>{day + ", " + date + " " + month + " " + year}</Dates>
       </CurrentDateTimeContainer>
 
       <Wrapper>

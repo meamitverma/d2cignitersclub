@@ -19,7 +19,8 @@ const link_github = "https://www.linkedin.com/company/d2cignitersclub-vitbhopal/
 
 const Container = styled.div`
   text-align: center;
-  `;
+  transition: transform 1s ease-in;
+`;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@ import { navItems } from "../data";
 import logo from "../assets/images/logo/ignitersclub_logo.jpg";
 const vitblogo = "https://vitbhopal.ac.in/file/2020/01/logochhota.png";
 
-const title = "Igniters club";
+const title = "Igniters Club";
 
 const Container = styled.div`
   position: fixed;
@@ -88,6 +88,7 @@ const Right = styled.div`
 `;
 const VITLogo = styled.img`
   height: 34px;
+  cursor: pointer;
 `;
 
 function Navbar() {
@@ -110,7 +111,9 @@ function Navbar() {
           })}
         </Middle>
         <Right>
-          <VITLogo src={vitblogo}></VITLogo>
+          <a href="https://vitbhopal.ac.in" target="_">
+            <VITLogo src={vitblogo}></VITLogo>
+          </a>
         </Right>
       </Wrapper>
     </Container>

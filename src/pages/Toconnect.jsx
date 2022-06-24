@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import { social_links } from '../data';
 
 const Container =  styled.div`
     display: flex;
+    flex-direction: column;
     height: 300px;
     margin: 17px 0px;
-    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: small;
+    padding: 5% 7%;
+    text-align: center;
     
 
     @media screen and (max-width:700px){
@@ -16,29 +19,24 @@ const Container =  styled.div`
     }
 
 `;
-const Left =  styled.div`
-    flex:1;
-    background-color: whitesmoke;
-    color: #5865f2;
+
+const Title = styled.h1`
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 1.5rem;
+    }
 `;
-const Middle =  styled.div`
-    flex: 1;
-    color: whitesmoke;
-    background-color: #FFA1A1;
-`;
-const Right =  styled.div`
-    flex: 1;
-    color: white;
-    background-color: #7FB5FF;
+
+const SubTitle = styled.h3`
+    color: #313131;
 `;
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: column;
-    height: 100%;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-between;
+    
 `;
 const LogoContainer = styled.div`
     
@@ -47,9 +45,11 @@ const Logo = styled.img`
     height: 125px;
     object-fit: contain;
     transition: 0.3s all ease;
+    cursor: pointer;
+    /* margin-bottom: rem; */
 
     &:hover{
-        transform: scale(0.85);
+        transform: scale(0.95);
     }
 
     @media screen and (max-width: 700px) {
@@ -70,30 +70,39 @@ const Link = styled.a`
 function Toconnect() {
   return (
     <Container id="toconnect">
-        <Left>
-            <Wrapper>
-                <LogoContainer>
+        <Title>Our Social Platforms</Title>
+        <Wrapper>
+            <LogoContainer>
+                <a href={social_links.discord.link} target='_'>
                     <Logo src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"></Logo>
-                </LogoContainer>
-                <Link href='https://discord.com/' target="_">Connect {'>'} </Link>
-            </Wrapper>  
-        </Left>
-        <Middle>
-            <Wrapper>
-                <LogoContainer>
+                </a>
+                <SubTitle>Discord</SubTitle>
+            </LogoContainer>
+            <LogoContainer>
+                <a href={social_links.instagram.link} target='_'>
                     <Logo src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></Logo>
-                </LogoContainer>
-                <Link href='https://www.instagram.com/d2cignitersclub_vitb/' target="_">Connect {'>'} </Link>
-            </Wrapper>  
-        </Middle>
-        <Right>
-            <Wrapper>
-                <LogoContainer>
-                    <Logo src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1652962791~hmac=ea591261fa2d9ca3f4505ea6928ce3af"></Logo>
-                </LogoContainer>
-                <Link href='https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/' target="_">Connect {'>'} </Link>
-            </Wrapper>  
-        </Right>
+                </a>
+                <SubTitle>Instagram</SubTitle>
+            </LogoContainer>
+            <LogoContainer>
+                <a href={social_links.linkedin.link} target='_'>
+                    <Logo src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1655798509~hmac=6f29856cf7a9bef5a039dcae9cda2b84"></Logo>
+                </a>
+                <SubTitle>LinkedIn</SubTitle>
+            </LogoContainer>
+            <LogoContainer>
+                <a href={social_links.facebook.link} target='_'>
+                    <Logo src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></Logo>
+                </a>
+                <SubTitle>Facebook</SubTitle>
+            </LogoContainer>
+            <LogoContainer>
+                <a href={social_links.youtube.link} target='_'>
+                    <Logo src="https://cdn-icons-png.flaticon.com/512/174/174883.png"></Logo>
+                </a>
+                <SubTitle>YouTube</SubTitle>
+            </LogoContainer>
+        </Wrapper>
     </Container>
   )
 }

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { upcomingEvents } from "../data";
+import React, { useState, useEffect } from "react";
+import axios from '../axios';
+// import { upcomingEvents } from "../data";
 
 import styled from "styled-components";
 
 const Container = styled.div`
   margin-top: 10px;
   width: 100%;
-  height: 80vh;
   position: relative;
   overflow: hidden;
 
@@ -159,6 +159,16 @@ const RegisterButton = styled.button`
 
 function Events() {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
+
+  useEffect(() => {
+    async function fetchEvents() {
+      const req = await axios.get('/d2cignitersclub/events');
+      setUpcomingEvents(req.data);
+    }
+
+    fetchEvents();
+  },[])
 
   const handleArrowClick = (direction) => {
     if (direction === "left") {

@@ -4,44 +4,44 @@ import SocialMedia from './components/Teams/SocialMedia';
 import Content from './components/Teams/Content';
 import Design from './components/Teams/Design';
 
-export const upcomingEvents =[
-    {
-        id:1,
-        img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
-        ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
-        bgcolor:"aliceblue",
-        title:"DemoEvent by Igniters club",
-        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        dateofevent:"19 Sept 2021",
-        timeofevent:"19:00",
-        venue:"Auditorium",
-        reglink:"https://docs.google.com/forms",
-    },
-    {
-        id:2,
-        img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
-        ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
-        bgcolor:"coral",
-        title:"This Event 2",  
-        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        dateofevent:"19 Sept 2021",
-        timeofevent:"19:00",
-        venue:"Auditorium",
-        reglink:"https://docs.google.com/forms",
-    },
-    {
-        id:3,
-        img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
-        ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
-        bgcolor:"lightblue",
-        title:"This Event 3",
-        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        dateofevent:"19 Sept 2021",
-        timeofevent:"19:00",
-        venue:"Auditorium",
-        reglink:"https://docs.google.com/forms",
-    },
-];
+// export const upcomingEvents =[
+//     {
+//         id:1,
+//         img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
+//         ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
+//         bgcolor:"aliceblue",
+//         title:"DemoEvent by Igniters club",
+//         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+//         dateofevent:"19 Sept 2021",
+//         timeofevent:"19:00",
+//         venue:"Auditorium",
+//         reglink:"https://docs.google.com/forms",
+//     },
+//     {
+//         id:2,
+//         img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
+//         ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
+//         bgcolor:"coral",
+//         title:"This Event 2",  
+//         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+//         dateofevent:"19 Sept 2021",
+//         timeofevent:"19:00",
+//         venue:"Auditorium",
+//         reglink:"https://docs.google.com/forms",
+//     },
+//     {
+//         id:3,
+//         img:"https://images.squarespace-cdn.com/content/v1/596511dc6b4998cddca6e553/1538370086507-WZQCION3ZR0OA9LI4NJ0/unnamed.jpg",
+//         ytlink:"https://www.youtube.com/embed/rokGy0huYEA",
+//         bgcolor:"lightblue",
+//         title:"This Event 3",
+//         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+//         dateofevent:"19 Sept 2021",
+//         timeofevent:"19:00",
+//         venue:"Auditorium",
+//         reglink:"https://docs.google.com/forms",
+//     },
+// ];
 
 export const navItems = [
     {
@@ -66,7 +66,7 @@ export const navItems = [
     },
     {
       id:5,
-      title: "to Connect",
+      title: "To Connect",
       href: "#toconnect",
     },
     {
@@ -202,7 +202,7 @@ export const navItems = [
       id:'SML',
       name:"M Shraddha",
       position:"Co Lead",
-      profile:"https://media-exp1.licdn.com/dms/image/C5603AQFfym7S_ffZQw/profile-displayphoto-shrink_400_400/0/1643718334148?e=1656547200&v=beta&t=QaXhhx5IPfR4GBVJHZMavZHDIejLHGwLck_qL-fXwO0",
+      profile:"https://media-exp1.licdn.com/dms/image/C4D03AQGwDF4m_jzKjw/profile-displayphoto-shrink_800_800/0/1652808117795?e=1658966400&v=beta&t=psdj5B-YFILOSO-9BpBhVGMxDaHBgkuekvaEe85ZsO0",
       linkedin:"https://www.linkedin.com/in/shraddha-m-9b99a9207/"
     },
 
@@ -223,7 +223,7 @@ export const navItems = [
       id:'SMM',
       name:"Manav Shah",
       position:"Member",
-      profile:"https://media-exp1.licdn.com/dms/image/C4E03AQGaxCVZHF9k9A/profile-displayphoto-shrink_400_400/0/1628232625380?e=1656547200&v=beta&t=Cu1igHEqMNQoVbTweVkvclwUO_X1nmO6HT8rrBrt6mY",
+      profile:"https://media-exp1.licdn.com/dms/image/C5603AQE2oMatOeDQxw/profile-displayphoto-shrink_400_400/0/1650004896823?e=1658966400&v=beta&t=_ut-W6B_wlPu6C28tRmDjbz-vBMVi0Dv_nSNtANqRsI",
       linkedin:"https://www.linkedin.com/in/mdshah2000/"
     },
 
@@ -232,7 +232,7 @@ export const navItems = [
       id:'DL',
       name:"Shantanu Modhave",
       position:"Lead",
-      profile:"https://media-exp1.licdn.com/dms/image/C5603AQGCSOEwtt3eIQ/profile-displayphoto-shrink_400_400/0/1646586557400?e=1656547200&v=beta&t=4ZFM7tUPvDygDNsvhXIG7siYdFaKVn-sNrN_rDsleRA",
+      profile:"https://media-exp1.licdn.com/dms/image/C4D03AQHLEKYyd16IHg/profile-displayphoto-shrink_800_800/0/1653240295730?e=1661385600&v=beta&t=dfd4QegCwgXTDFkllNhcnCGzWDoI0qA9Exlslg_Ak-E",
       linkedin:"https://www.linkedin.com/in/shantanu-modhave-m777s/"
     },
     {
@@ -253,9 +253,9 @@ export const navItems = [
     {
       id:'DM',
       name:"Sumit Kumar Garsa",
-      position:"Member",
-      profile:"https://media-exp1.licdn.com/dms/image/C4E03AQHk2t-pw_WhRg/profile-displayphoto-shrink_400_400/0/1648614979507?e=1656547200&v=beta&t=asQeiyk4IeiNVR9FSgdhyxF_rIOQIERGqC2j-Zmhjnc",
-      linkedin:"https://www.linkedin.com/in/sumit-kumar-garsa-49b625227/"
+      position:"Member"
+      // profile:"https://media-exp1.licdn.com/dms/image/C4E03AQHk2t-pw_WhRg/profile-displayphoto-shrink_400_400/0/1648614979507?e=1656547200&v=beta&t=asQeiyk4IeiNVR9FSgdhyxF_rIOQIERGqC2j-Zmhjnc"
+      // linkedin:"https://www.linkedin.com/in/sumit-kumar-garsa-49b625227/"
     },
 
     // Content
@@ -361,3 +361,28 @@ export const navItems = [
       linkedin:"https://www.linkedin.com/in/ayush-thakur-1b1127221/"
     }
   ];
+
+
+// SOCIAL MEDIA LINKS
+export const social_links={
+  'discord':{
+    title: 'Discord',
+    link: 'https://discord.com/'
+  },
+  'instagram':{
+    title: 'Instagram',
+    link: 'https://www.instagram.com/d2cignitersclub_vitb/'
+  },
+  'facebook':{
+    title: 'Facebook',
+    link: 'https://www.facebook.com/'
+  },
+  'linkedin':{
+    title: 'LinkedIn',
+    link: 'https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/'
+  },
+  'youtube':{
+    title: 'YouTube',
+    link: 'https://www.youtube.com/channel/UCzB0N8FMKyoIR--nJ7faD4A'
+  }
+};

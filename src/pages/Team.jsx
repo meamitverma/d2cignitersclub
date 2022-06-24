@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import Member from "../components/Member";
 import { TeamList } from "../data";
@@ -121,6 +121,7 @@ function Team() {
 
     // console.log(teamIndex);
   };
+
 
   //hits handleArrowCLick() function every few sec
   // const MINUTE_MS = 1000;
